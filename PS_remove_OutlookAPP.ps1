@@ -1,5 +1,5 @@
 param(
-[string]$computername]
+[string]$computername
 )
 
 
@@ -11,7 +11,7 @@ exit
 else{
 
 
-Remove-AppxPackage	-name Microsoft.OutlookForWindows
+get-AppxPackage	-name Microsoft.OutlookForWindows | Remove-AppxPackage -verbose
 
 }
 
